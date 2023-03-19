@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>CPGP-major-project-1</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="score-area">
+        <div class="game-name">
+          <div>ROCK</div>
+          <div>PAPER</div>
+          <div>SCISSORS</div>
+        </div>
+        <div class="score-container">
+          <div class="score user">
+            <div>YOUR</div>
+            <div>SCORE</div>
+            <div id="user-score" class="score-no"></div>
+          </div>
+          <div class="score computer">
+            <div>COMPUTER</div>
+            <div>SCORE</div>
+            <div id="pc-score" class="score-no"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="game-area">
+        <div class="playground">
+          <div class="triangle">
+            <img class="tri-img" src="/assets/triangle.png" />
+          </div>
+
+          <div class="play-icons" id="rock">
+            <button class="icon-choice-btn button">
+              <img src="/assets/rock.svg" />
+            </button>
+          </div>
+
+          <div class="play-icons" id="scissors">
+            <button class="icon-choice-btn button">
+              <img src="/assets/scissors.svg" />
+            </button>
+          </div>
+
+          <div class="play-icons" id="paper">
+            <button class="icon-choice-btn button">
+              <img src="/assets/paper.svg" />
+            </button>
+          </div>
+        </div>
+
+        <div class="each-round-result inactive">
+          <div class="choice" id="user-choice">
+            <div>YOU PICKED</div>
+            <div class="level level1">
+              <div class="level level2">
+                <div class="level level3">
+                  <div class="icon user-icon-div">
+                    <img id="user-icon" src="/assets/paper.svg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="each-round-msg">
+            <div class="user-msg"></div>
+            <div>AGAINST PC</div>
+            <button class="play-again button">PLAY AGAIN</button>
+          </div>
+          <div class="choice" id="pc-choice">
+            <div>PC PICKED</div>
+            <div class="level level1">
+              <div class="level level2">
+                <div class="level level3">
+                  <div class="icon pc-icon-div">
+                    <img id="pc-icon" src="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="rules-card inactive">
+      <div class="rules">
+        <h3>Game Rules</h3>
+        <ul class="rules-list">
+          <li>
+            Rock beats scissors, scissors beat paper, and paper beats rock.
+          </li>
+          <li>
+            Agree ahead of time whether you’ll count off “rock, paper, scissors,
+            shoot” or just “rock, paper, scissors.
+          </li>
+          <li>
+            Use rock, paper, scissors to settle minor decisions or simply play
+            to pass the time
+          </li>
+          <li>
+            If both players lay down the same hand, each player lays down
+            another hand
+          </li>
+        </ul>
+      </div>
+      <div class="cross button">
+        <img src="/assets/X.svg" />
+      </div>
+    </div>
+
+    <div class="hurray-container inactive">
+      <div class="hurray">
+        <div class="decoration">
+          <div id="cup"><img src="/assets/cup.svg" /></div>
+          <div id="star1" class="twinkle star-type1">
+            <img src="/assets/star.svg" />
+          </div>
+          <div id="star2" class="twinkle star-type1">
+            <img src="/assets/star.svg" />
+          </div>
+          <div id="star3" class="twinkle star-type1">
+            <img src="/assets/star.svg" />
+          </div>
+          <div id="star4" class="twinkle star-type1">
+            <img src="/assets/star.svg" />
+          </div>
+          <div id="star5" class="twinkle star-type2">
+            <img src="/assets/star.svg" />
+          </div>
+          <div id="star6" class="twinkle star-type3">
+            <img src="/assets/star.svg" />
+          </div>
+          <div id="star7" class="twinkle star-type3">
+            <img src="/assets/star.svg" />
+          </div>
+          <div id="star8" class="twinkle star-type4">
+            <img src="/assets/star.svg" />
+          </div>
+        </div>
+        <div class="hurray-msg">
+          <div id="msg1">HURRAY!!</div>
+          <div id="msg2">YOU WON THE GAME</div>
+        </div>
+        <button id="hurray-play-again" class="play-again button">
+          PLAY AGAIN
+        </button>
+      </div>
+    </div>
+    <div class="reset-game">
+      <button class="reset header-button">RESET</button>
+    </div>
+    <button id="next" class="footer-button inactive">NEXT</button>
+    <button id="rules-button" class="footer-button button">RULES</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
